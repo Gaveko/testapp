@@ -44,9 +44,7 @@ class BooksController extends BaseController
         $body = $this->request->getBody();
         $isValid = true;
         $errors = [];
-        echo '<pre>';
-        var_dump($body);
-        echo '</pre>';
+
         if (empty($body['title'])) {
             $isValid = false;
             $errors[] = 'Title is required';

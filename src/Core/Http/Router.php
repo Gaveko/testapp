@@ -16,9 +16,6 @@ class Router
 
     public function execute(Request $request)
     {
-        // echo '<pre>';
-        // var_dump($_SERVER);
-        // echo '<pre>';
         if (str_contains($request->getPath(), 'static') || str_contains($request->getPath(), 'storage')) {
             return new StaticResponse($request->getPath());
         }
