@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Core\Database;
-use App\Core\Http\Request;
+namespace Gaveko\Framework\Database;
+
+use Gaveko\Framework\Http\Request;
 
 abstract class Model
 {
@@ -20,7 +21,7 @@ abstract class Model
             foreach ($row as $key => $value) {
                 if (str_contains($key, '_id')) {
                     $key = substr($key, 0, -3);
-                    $className = 'App\Models\\'.ucfirst($key);
+                    $className = 'Gaveko\App\Models\\'.ucfirst($key);
                     $value = $className::get($value);
                 }
                 $setMethod = 'set'.ucfirst($key);
@@ -47,7 +48,7 @@ abstract class Model
             foreach ($row as $key => $value) {
                 if (str_contains($key, '_id')) {
                     $key = substr($key, 0, -3);
-                    $className = 'App\Models\\'.ucfirst($key);
+                    $className = 'Gaveko\App\Models\\'.ucfirst($key);
                     $value = $className::get($value);
                 }
                 $setMethod = 'set'.ucfirst($key);
@@ -95,7 +96,7 @@ abstract class Model
             foreach ($row as $key => $value) {
                 if (str_contains($key, '_id')) {
                     $key = substr($key, 0, -3);
-                    $className = 'App\Models\\'.ucfirst($key);
+                    $className = 'Gaveko\App\Models\\'.ucfirst($key);
                     $value = $className::get($value);
                 }
                 $setMethod = 'set'.ucfirst($key);

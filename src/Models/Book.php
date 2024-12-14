@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models;
+namespace Gaveko\App\Models;
 
-use App\Core\Database\DBConnection;
-use App\Core\Database\Model;
+use Gaveko\Framework\Database\DBConnection;
+use Gaveko\Framework\Database\Model;
 
 class Book extends Model
 {

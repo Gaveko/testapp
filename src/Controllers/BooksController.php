@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Controllers;
+namespace Gaveko\App\Controllers;
 
-use App\Core\Http\BaseController;
-use App\Core\Http\Response;
-use App\Models\Author;
-use App\Models\Book;
-use App\Models\Category;
+use Gaveko\Framework\Http\BaseController;
+use Gaveko\Framework\Http\Response;
+use Gaveko\App\Models\Author;
+use Gaveko\App\Models\Book;
+use Gaveko\App\Models\Category;
 
 class BooksController extends BaseController
 {

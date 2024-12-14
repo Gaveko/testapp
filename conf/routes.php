@@ -1,7 +1,7 @@
 <?php
 
-use App\Controllers\BooksController;
-use App\Core\Http\Route;
+use Gaveko\App\Controllers\BooksController;
+use Gaveko\Framework\Http\Route;
 
 return [
     Route::get('/details/@id/', BooksController::class, 'detail'),

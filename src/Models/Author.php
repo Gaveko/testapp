@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Gaveko\App\Models;
 
-use App\Core\Database\Model;
+use Gaveko\Framework\Database\Model;
 
 class Author extends Model
 {

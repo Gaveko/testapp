@@ -1,0 +1,17 @@
+{
+    "name": "gaveko/testapp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Gaveko\\App\\": "src/",
+            "Gaveko\\Framework\\": "lib/Framework/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladyslav",
+            "email": "vladyslav.harkavenko.00@gmail.com"
+        }
+    ],
+    "require": {}
+}

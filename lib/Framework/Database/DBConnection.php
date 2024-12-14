@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core\Database;
+namespace Gaveko\Framework\Database;
 
 class DBConnection
 {

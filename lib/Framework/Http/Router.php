@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Core\Http;
+namespace Gaveko\Framework\Http;
 
-use App\Core\Http\Request;
-use App\Core\Http\StaticResponse;
+use Gaveko\Framework\Http\Request;
+use Gaveko\Framework\Http\StaticResponse;
 
 class Router
 {
