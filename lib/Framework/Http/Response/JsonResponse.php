@@ -15,6 +15,7 @@ class JsonResponse implements ResponseInterface
 
     public function render()
     {
-        require VIEWS_PATH . '/' . $this->view . '.php';
+        header("Content-Type: application/json");
+        echo json_encode($this->data);
     }
 }
